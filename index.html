@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marietou Sarr – Data analyst & data scientist junior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7F9;--surface:#fff;--ink:#14213D;--muted:#5B657A;--line:#DDE1E8;--accent:#0B6E5C;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151F;--surface:#171E2B;--ink:#E8ECF3;--muted:#9AA5B8;--line:#283142;--accent:#3DC9A8}}
+:root[data-theme="dark"]{--bg:#10151F;--surface:#171E2B;--ink:#E8ECF3;--muted:#9AA5B8;--line:#283142;--accent:#3DC9A8}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:1.5rem;padding-bottom:1.5rem;flex-wrap:wrap}
+header strong{font-weight:700}
+nav{display:flex;gap:1.5rem;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center;padding:clamp(2.5rem,7vw,5.5rem) 0}
+h1{font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.08;letter-spacing:-.025em;font-weight:700;margin:0 0 1.25rem;max-width:16ch}
+.lead{color:var(--muted);max-width:46ch;margin:0 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.25rem;border-radius:6px;font-weight:500;text-decoration:none;border:1px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.pipe{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem 1.5rem}
+.pipe h2{font-size:.95rem;font-weight:500;margin:0 0 1rem}
+.pipe ol{list-style:none;margin:0;padding:0 0 0 1.4rem;border-left:2px solid var(--line)}
+.pipe li{position:relative;padding:.45rem 0}
+.pipe li::before{content:"";position:absolute;left:calc(-1.4rem - 6px);top:.95rem;width:10px;height:10px;border-radius:50%;background:var(--bar,var(--line));border:2px solid var(--surface);box-sizing:content-box}
+.pipe li:last-child::before{background:var(--accent)}
+.pipe b{display:block;line-height:1.3}
+.pipe span{color:var(--muted);font-size:.88rem}
+section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
+h2.t{font-size:1.6rem;letter-spacing:-.015em;margin:0 0 2rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem)}
+.about p{margin:0 0 1rem;max-width:60ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.5rem;align-content:start}
+.facts b{display:block;font-size:1.9rem;line-height:1.1;letter-spacing:-.02em}
+.facts span{color:var(--muted);font-size:.9rem}
+.note{color:var(--muted);font-size:.95rem;max-width:70ch;margin:-1rem 0 2rem}
+.proj{display:grid;grid-template-columns:1fr 2fr;gap:1rem 3rem;padding:1.75rem 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj h3{margin:0 0 .35rem;font-size:1.2rem;line-height:1.3}
+.proj .stack{color:var(--muted);font-size:.9rem}
+.proj p{margin:0 0 .75rem;max-width:62ch}
+.res{font-weight:700;color:var(--accent)}
+.tag{display:inline-block;margin-left:.5rem;padding:.05rem .5rem;border:1px solid var(--line);border-radius:99px;font-size:.78rem;font-weight:500;color:var(--muted);vertical-align:middle}
+.more{border-top:1px solid var(--line);padding-top:1.5rem;color:var(--muted);max-width:78ch}
+.more b{color:var(--ink)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+.skills h3{font-size:1rem;margin:0 0 .6rem}
+.skills ul,.xp{list-style:none;margin:0;padding:0}
+.skills li{padding:.3rem 0;color:var(--muted)}
+.xp li{display:grid;grid-template-columns:9rem 1fr;gap:1rem;padding:1rem 0;border-top:1px solid var(--line)}
+.xp li:first-child{border-top:0;padding-top:0}
+.xp time{color:var(--muted);font-size:.95rem}
+.xp b{display:block}
+.xp span{color:var(--muted)}
+.contact p{max-width:52ch;color:var(--muted);margin:0 0 1.5rem}
+.links{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
+footer{padding:2rem 0 2.5rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:760px){
+.hero,.about,.proj{grid-template-columns:1fr}
+.xp li{grid-template-columns:1fr;gap:.25rem}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<strong>Marietou Sarr</strong>
+<nav><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>Je transforme des données brutes en décisions claires.</h1>
+<p class="lead">Data analyst et data scientist junior, formée en ingénierie mathématique. Je récupère les données, contrôle leur qualité, les analyse, puis je les restitue dans des applications et dashboards.</p>
+<div class="btns"><a class="btn main" href="#projets">Voir mes projets</a><a class="btn" href="#contact">Me contacter</a></div>
+</div>
+<div class="pipe">
+<h2>Ma façon de travailler</h2>
+<ol>
+<li><b>Extraire</b><span>SQL Server, PostgreSQL</span></li>
+<li><b>Nettoyer</b><span>R, Python</span></li>
+<li><b>Contrôler</b><span>Règles de data quality</span></li>
+<li><b>Analyser</b><span>Statistiques, ACP, clustering</span></li>
+<li><b>Modéliser</b><span>Régression, Random Forest</span></li>
+<li><b>Restituer</b><span>Shiny, Power BI</span></li>
+</ol>
+</div>
+</div>
+
+<section class="about" id="apropos">
+<div>
+<h2 class="t">À propos</h2>
+<p>Mon parcours mêle statistiques, programmation et compréhension métier. J'aime traduire une demande floue en règles précises, en requêtes SQL et en indicateurs que l'on peut vérifier.</p>
+<p>Lors de mon stage, j'ai travaillé sur la qualité des données d'un entrepôt de données et sur la validation d'une migration de système d'information.</p>
+</div>
+<div class="facts">
+<div><b>1 912</b><span>clés dupliquées repérées à la migration</span></div>
+<div><b>4 787</b><span>observations analysées, 35 variables</span></div>
+<div><b>3</b><span>langages : SQL, R, Python</span></div>
+</div>
+</section>
+
+<section id="projets">
+<h2 class="t">Projets</h2>
+<p class="note">Les projets issus de mon stage sont reconstruits sur des données synthétiques. Aucune donnée ni information client n'est publiée.</p>
+
+<article class="proj">
+<div><h3>Suivi automatisé de la qualité des données</h3><span class="stack">R, Shiny, bs4Dash, dplyr, data.table, ggplot2, GitLab CI/CD</span></div>
+<div><p>Application Shiny qui analyse automatiquement un jeu de données : valeurs manquantes, évolution dans le temps, corrélations de Spearman entre indicateurs de valeurs manquantes, puis clustering hiérarchique (Ward.D2, silhouette, coefficient cophénétique).</p><p class="res">Chaque variable est classée OK, à surveiller ou critique selon son taux de valeurs manquantes et son évolution.</p></div>
+</article>
+
+<article class="proj">
+<div><h3>Validation d'une migration SQL Server vers PostgreSQL</h3><span class="stack">SQL Server, PostgreSQL, SQL, R</span></div>
+<div><p>Comparaison des données entre l'ancien et le nouveau système : doublons, valeurs manquantes, différences entre NULL, vide et 0, montants, dates et codes de dossiers. Il fallait distinguer une vraie anomalie de migration d'une simple différence de règle métier.</p><p class="res">Environ 1 912 clés dupliquées identifiées.</p></div>
+</article>
+
+<article class="proj">
+<div><h3>Adoption de l'IA et impact économique</h3><span class="stack">R, Shiny, ACP, K-means, Random Forest</span></div>
+<div><p>Projet de Master sur l'évolution de l'adoption de l'intelligence artificielle et ses liens avec des indicateurs économiques : analyse exploratoire, corrélations, ACP, clustering, régression, prévisions et importance des variables, par secteur et par région.</p><p class="res">Résultats restitués dans un dashboard Shiny interactif.</p></div>
+</article>
+
+<article class="proj">
+<div><h3>Facteurs associés aux valeurs manquantes</h3><span class="stack">R, ggplot2, tests statistiques</span></div>
+<div><p>Au lieu de constater un taux de valeurs manquantes, je cherche à comprendre pourquoi elles apparaissent : création d'un indicateur de valeur manquante, tests statistiques, visualisation puis interprétation métier.</p><p class="res">Plusieurs variables significativement associées à l'absence d'une information financière.</p></div>
+</article>
+
+<article class="proj">
+<div><h3>Prédiction du risque sanitaire des bovins<span class="tag">En cours</span></h3><span class="stack">Python, pandas, scikit-learn, Matplotlib</span></div>
+<div><p>Projet Kaggle sur les liens entre alimentation, caractéristiques des animaux, santé et production : nettoyage, analyse exploratoire, feature engineering, puis comparaison de modèles de classification évalués par F1-score et ROC-AUC.</p></div>
+</article>
+
+<article class="proj">
+<div><h3>Contrôle financier et analyse du chiffre d'affaires<span class="tag">En cours</span></h3><span class="stack">Excel, Power BI</span></div>
+<div><p>Fichier de 4 787 lignes et 35 variables : calcul d'un chiffre d'affaires total, règle de comparaison entre PV et CA total, puis restitution dans un dashboard Power BI.</p><p class="res">Environ 3 720 observations où PV dépasse le CA total.</p></div>
+</article>
+
+<p class="more"><b>Autres travaux universitaires.</b> Simulation de Monte-Carlo avec l'algorithme de Metropolis-Hastings (loi de Cauchy), régression multiple sous SAS, Random Forest sous Julia, ACP avec classification ascendante hiérarchique, modélisation de données de sinistres sous R.</p>
+</section>
+
+<section id="competences">
+<h2 class="t">Compétences</h2>
+<div class="skills">
+<div><h3>Données et bases</h3><ul><li>SQL (SQL Server, PostgreSQL)</li><li>Data quality et migration</li><li>Excel</li></ul></div>
+<div><h3>Programmation</h3><ul><li>R (Shiny, dplyr, data.table, ggplot2)</li><li>Python (pandas, NumPy, scikit-learn)</li><li>SAS, Julia</li></ul></div>
+<div><h3>Statistiques et ML</h3><ul><li>ACP, clustering, régression</li><li>Random Forest</li><li>Simulation de Monte-Carlo</li></ul></div>
+<div><h3>Restitution et outils</h3><ul><li>Shiny, Power BI</li><li>Git, GitLab CI/CD</li><li>pkgdown, covr</li></ul></div>
+</div>
+</section>
+
+<section id="parcours">
+<h2 class="t">Parcours</h2>
+<ul class="xp">
+<li><time>Stage</time><div><b>Data analyst, BCA Expertise</b><span>Qualité des données, migration du système d'information, reporting et package R interne</span></div></li>
+<li><time>Formation</time><div><b>Master en ingénierie mathématique</b><span>Statistiques, machine learning, simulation</span></div></li>
+</ul>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="t">Contact</h2>
+<p>Je recherche un poste de data analyst, data ou BI, data scientist junior ou chargée d'études statistiques.</p>
+<a class="btn main" href="mailto:prenom.nom@email.com">M'écrire</a>
+<div class="links"><a href="https://github.com/Marietou-Sarr">GitHub</a><a href="#">LinkedIn</a><a href="#">CV en PDF</a></div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Marietou Sarr</div></footer>
+</body>
+</html>
